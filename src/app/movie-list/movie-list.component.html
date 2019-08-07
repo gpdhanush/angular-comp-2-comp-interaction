@@ -1,0 +1,20 @@
+<header class="jumbotron"> 
+  <h4 align="center">Component 2 Component Interaction </h4>
+</header>
+<div class="container">
+  <div class="" *ngFor="let m of bookingMovie">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" > 
+      <div class="card">
+          <img src="{{m.src}}" alt="movie logo" style="width:100%">
+        <div class="container-fluid">
+          <h4>Movie Name : <b>{{m.name}}</b></h4> 
+          <!-- <span class="text-left">{{m.year}} </span>  -->
+          <h4 class="right">Rs. {{m.price}} </h4> 
+        </div>
+        <div class="text-center"> 
+          <button class="btn btn-primary" (click)="book(m.name)"> Buy Ticket </button> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

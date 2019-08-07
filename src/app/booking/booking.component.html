@@ -1,0 +1,13 @@
+<app-movie-list [bookingMovie]="movie" (output)=onclick($event)></app-movie-list>
+
+<div class="container" *ngIf="result">
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12"></div>
+  <div class="col-lg-8 col-md-4 col-sm-6 col-xs-12">
+   <div class="alert alert-success alert-dismissible fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>{{result}}</strong>
+  </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+  </div>
+</div>
